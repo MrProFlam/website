@@ -430,29 +430,30 @@ tbody tr:hover {
 }
 
 /* Join Us section */
-.Join Us-grid {
+.join-us-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 30px;
 }
 
-.Join Us-info,
-.Join Us-form {
+.join-us-info,
+.join-us-form {
   background-color: var(--white);
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
-.Join Us-info h2,
-.Join Us-form h2 {
+.join-us-info h2,
+.join-us-form h2 {
   color: var(--navy);
   margin-bottom: 18px;
 }
 
-.Join Us-info p {
+.join-us-info p {
   margin-bottom: 10px;
 }
+
 
 label {
   display: block;
