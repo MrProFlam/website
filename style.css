@@ -429,28 +429,28 @@ tbody tr:hover {
   color: #8a6100;
 }
 
-/* Contact section */
-.contact-grid {
+/* Join Us section */
+.Join Us-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 30px;
 }
 
-.contact-info,
-.contact-form {
+.Join Us-info,
+.Join Us-form {
   background-color: var(--white);
   padding: 30px;
   border-radius: 14px;
   box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
 }
 
-.contact-info h2,
-.contact-form h2 {
+.Join Us-info h2,
+.Join Us-form h2 {
   color: var(--navy);
   margin-bottom: 18px;
 }
 
-.contact-info p {
+.Join Us-info p {
   margin-bottom: 10px;
 }
 
@@ -478,7 +478,7 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(19, 78, 124, 0.15);
 }
 
-.contact-form .button {
+.Join Us-form .button {
   margin-top: 20px;
   border: none;
   cursor: pointer;
@@ -496,7 +496,7 @@ textarea:focus {
 /* For Mobile version */
 @media (max-width: 850px) {
   .split,
-  .contact-grid {
+  .Join Us-grid {
     grid-template-columns: 1fr;
   }
 
