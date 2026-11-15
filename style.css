@@ -429,6 +429,88 @@ tbody tr:hover {
   color: #8a6100;
 }
 
+.tag.win {
+  background-color: #dcfce7;
+  color: #166534;
+}
+
+.tag.draw {
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+/* Match Highlights */
+.highlight-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+.video-thumb {
+  position: relative;
+  height: 200px;
+  background-color: var(--navy);
+  overflow: hidden;
+}
+
+.video-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.92;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.highlight-card:hover .video-thumb img {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
+.play-badge {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px;
+  height: 52px;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  padding-left: 3px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.highlight-card:hover .play-badge {
+  transform: translate(-50%, -50%) scale(1.1);
+  background-color: #b81e33;
+}
+
+.video-duration {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(11, 37, 69, 0.88);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 6px;
+}
+
+.highlight-card .card-body h3 {
+  margin-top: 12px;
+}
+
+.highlight-card .card-body p {
+  color: var(--grey);
+  font-size: 14px;
+}
+
 /* Join Us section */
 .join-us-grid {
   display: grid;
@@ -454,7 +536,6 @@ tbody tr:hover {
   margin-bottom: 10px;
 }
 
-
 label {
   display: block;
   margin: 15px 0 6px;
@@ -479,7 +560,7 @@ textarea:focus {
   box-shadow: 0 0 0 3px rgba(19, 78, 124, 0.15);
 }
 
-.Join Us-form .button {
+.join-us-form .button {
   margin-top: 20px;
   border: none;
   cursor: pointer;
@@ -497,7 +578,7 @@ textarea:focus {
 /* For Mobile version */
 @media (max-width: 850px) {
   .split,
-  .Join Us-grid {
+  .join-us-grid {
     grid-template-columns: 1fr;
   }
 
